@@ -1,8 +1,11 @@
 {
-  "name": "eslint-typescript-type-warnings-test-repo",
+  "name": "eslint-typescript-type-warnings-example",
   "version": "0.1.0",
-  "description": "eslint typescript type warnings test repo",
-  "scripts": {},
+  "description": "eslint typescript type warnings example",
+  "scripts": {
+    "build": "tsc --outDir build --project src/",
+    "eslint": "eslint --ext .ts ."
+  },
   "devDependencies": {
     "@types/jest": "^25.1.3",
     "@typescript-eslint/eslint-plugin": "^2.21.0",
