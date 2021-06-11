@@ -1,6 +1,5 @@
 module.exports = {
   'env': {
-    'jest': true,
     'node': true,
   },
   'extends': [
@@ -8,16 +7,15 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:jest/recommended',
   ],
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
-    'project': ['./tsconfig.json'],
-    'tsconfigRootDir': __dirname,
+    'project': [
+      './tsconfig.json',
+    ],
   },
   'plugins': [
     '@typescript-eslint',
-    'jest',
   ],
   'root': true,
 };
