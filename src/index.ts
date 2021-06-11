@@ -1,14 +1,13 @@
 class Shape {
-  public readonly name;
+  public readonly name: string;
 
-  public constructor(name) {
+  public constructor(name: string) {
     this.name = name;
   }
 
-  /*public*/ getName () {
-
-    return  this.name
-   }
+  getName(): string {
+    return this.name;
+  }
 }
 
-export default Shape
+export default Shape;
